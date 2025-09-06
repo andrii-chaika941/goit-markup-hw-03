@@ -13,6 +13,19 @@ button {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 p,
 h1,
 h2,
@@ -59,7 +72,6 @@ ul {
 .header-navigation {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 
 .header-logo {
@@ -71,6 +83,7 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .header-logo-navy {
@@ -124,8 +137,8 @@ ul {
 
 .hero-section {
   background-color: #2e2f42;
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-container {
@@ -150,6 +163,9 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
 }
 
 .hero-section-btn:hover,
@@ -172,10 +188,12 @@ ul {
 .features-list {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 
 .features-list-item {
   align-items: center;
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .features-subtitle {
@@ -188,14 +206,15 @@ ul {
 
 .features-descr {
   line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 /*-- Team --*/
 
 .team-section {
   background-color: #f4f4fd;
-  padding-top: 366px;
-  padding-bottom: 366px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   display: flex;
   align-items: center;
 }
@@ -207,16 +226,19 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .team-list-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-subtitle {
@@ -258,6 +280,8 @@ ul {
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -269,6 +293,8 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-navy {
@@ -278,4 +304,5 @@ ul {
 .copyright-text {
   color: #f4f4fd;
   line-height: 1.5;
+  max-width: 264px;
 }
